@@ -1,0 +1,33 @@
+
+<div class="row">
+    <div class="col-md-2 px-4"><h5>New Product</h5></div>
+    <div class="col-md-4 offset-6 category">
+        <ul>
+            <li>Laptops</li>
+            <li>SmartPhones</li>
+            <li>Cameras</li>
+            <li>Accessories</li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3" *ngFor="let item of product">
+        <mat-card class="product-card">
+            <mat-card-header></mat-card-header>
+            <mat-card-content>
+                <img [src]="item.image" alt="product-picture" height="250px" width="250px">
+                <div class="card-content">
+                    <span>{{item.title}}</span>
+                    <span>${{item.price}}</span>
+                    <star-rating [starType]="'svg'" [rating]="item.rating.rate"></star-rating>
+                    <hr>
+                    <div class="product-action">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

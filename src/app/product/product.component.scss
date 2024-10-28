@@ -1,0 +1,35 @@
+.category{
+    display: flex;
+    gap: 18px;
+}
+ul{
+    list-style-type: none;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.product-action{
+    display: flex;
+    gap: 20px;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    height: 450px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-action i:hover {
+    color: #ff4757; 
+}

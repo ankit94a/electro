@@ -1,0 +1,8 @@
+  <div class="layout">
+  <app-header></app-header>
+  <app-navbar></app-navbar>
+  <br>
+  <div class="product" *ngIf="productList.length > 0">
+    <app-product [product]="productList"></app-product>
+  </div> 
+</div>
